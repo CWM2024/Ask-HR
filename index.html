@@ -39,11 +39,11 @@
             userMessage.textContent = 'You: ' + message;
             messagesDiv.appendChild(userMessage);
 
-            const response = await fetch('https://chatbox-openai-prod.cognitiveservices.azure.com/openai/deployments/YOUR_DEPLOYMENT_NAME/chat/completions', {
+            const response = await fetch('https://chatbox-openai-prod.cognitiveservices.azure.com/openai/deployments/Microsoft.CognitiveServicesAllInOne-20240516142011/chat/completions', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
-                    'api-key': 'YOUR_API_KEY'
+                    'api-key': '8d704886db0545e198ed453d8f620e82'
                 },
                 body: JSON.stringify({
                     prompt: message,
